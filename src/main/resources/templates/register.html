@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信息页面</title>
+</head>
+<body>
+<h2>欢迎来到注册页面</h2>
+
+<!--添加用户，即用户注册页面-->
+    <div>
+        <form action="/adduser" method="post">
+            <label for="">用户名</label>
+            <input type="text" name="username" placeholder="用户名">
+            <label for="">密码</label>
+            <input type="password"name="password" placeholder="密码">
+            <input type="submit" value="注册">
+        </form>
+    </div>
+
+<!--根据用户名删除用户-->
+    <div>
+        <form action="/deluser" method="post">
+            <input type="text" name="username" placeholder="用户名">
+            <input type="submit" value="删除用户">
+        </form>
+    </div>
+
+<!--修改用户密码-->
+    <div>
+        <form action="/changepwd" method="post">
+            <label for="">用户名</label>
+            <input type="text" name="username" placeholder="用户名">
+            <label for="">密码</label>
+            <input type="password" name="password" placeholder="密码">
+            <input type="submit" value="修改密码">
+        </form>
+    </div>
+
+
+<!--查询用户-->
+    <div>
+        <form action="/searchuser" method="post">
+            <input type="text" name="username" placeholder="用户名">
+            <input type="submit" value="查询用户">
+        </form>
+    </div>
+
+</body>
+</html>
